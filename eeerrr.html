@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">    
+ <!--<meta http-equiv="refresh" content="10; url=https://api.whatsapp.com/send?phone=6282231696900&text=Haloo...%0Abulan%20ini%20saya%20terlambat%20bayar%20iuran%20wifi">
+--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Auto isolir </title>      
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+
+   <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;    
+    background-image: url("");    -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover; 
+    background-size: cover;
+    background-color: #232323;
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 420px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    background: #FFF;
+}
+.warning{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: #000;
+    padding: 10px;
+    background-color: #f8d7da;
+ }   
+.note{
+    text-align: right;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    font-style: italic;
+    
+   font-size: 12px;
+
+}
+.img{
+		color: #fff;		
+		position: absolute;
+		margin: 0 auto;
+		border: 5px;
+		border-style: solid;
+		border-color: #fff;
+
+		left: 0;
+		right: 0;
+  top: -95px;
+		width: 95px;
+		height: 95px;
+		text-align: center;
+		font-size: 70px;
+				background: #ff0000;
+				border-radius: 50%;
+}
+
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-color: #fff;
+    background-color: #4267b2;
+}
+p{ color: #319DA0; font-size: 20px; margin: 5% 15%; padding: 25px; } #blink { color: #A62349; }
+
+
+.form a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+.inf_1{
+    
+    align-items: ceter;
+    text-align: center;
+    text-decoration: bold;
+    justify-content: center;
+    border-radius: 6px;
+    color: #000;
+    padding: 10px;
+}
+.inf_2{
+    display: flex;
+    align-items: ceter;
+    text-align: left;
+    justify-content: center;
+    border-radius: 6px;
+    color: #000;
+    padding: 10px;
+    background-color: #fffac3;
+}
+
+.form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;   
+}
+.field input:focus{
+    border-bottom-width: 2px;    
+}
+
+.field button{
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #016dcb;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form-content a:hover{
+    text-decoration: underline;
+}
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 16px 0;
+    background-color: #d4d4d4;
+}
+.line::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}         
+ </style>
+   </head>
+<body>            
+ <section class="container forms"> 
+  <div class="form login">          
+   <div class="note">#billing_info</div>
+
+        <div class="warning">
+          <h4>
+Sayangnya internet anda sedang terputus<br> sementara ini
+          </h4>
+        <br>
+     </div>
+     <div class="line"></div>
+     <div class="inf_1"><blink>
+      <h2>
+          Mengingatkan:</h2></blink>
+          <br>
+          <h3>
+          iuran tanggal 20 di setiap bulannya</h3></div>
+
+          
+<div class="inf_2">       
+mulai tanggal 20 <br>
+anda bisa melihat notifikasi ini <br>
+selama 3 menit setiap jam<br><br>
+dan anda bisa melihat notifikasi ini <br>
+sepanjang waktu apabila<br>
+di tanggal 24 belum melakukan konfirmasi<br>
+<br>
+program ini berjalan otomatis<br>
+untuk mengingat dan mengingatkan<br>
+</div>
+<div class="field input-field">
+    <h3>mohon kerjasamanya</h3>
+    </div>
+<div class="line"></div>
+<div class="field input-field">
+semoga harimu menyenangkan
+
+<embed src="/music.mp3" loop="true" autostart="true" width="2" height="0">
+
+
+
+
+
+</div>
+
+
+           
+    </body>
+</html>
